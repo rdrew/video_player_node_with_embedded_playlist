@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Video player node with embedded playlist feature.
+ */
+
+include_once 'video_player_node_with_embedded_playlist.features.inc';
