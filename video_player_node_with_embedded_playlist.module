@@ -5,3 +5,7 @@
  */
 
 include_once 'video_player_node_with_embedded_playlist.features.inc';
+
+function video_player_node_with_embedded_playlist_theme_registry_alter(&$theme_registry) {
+  dpm($theme_registry);
+}
