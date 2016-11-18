@@ -7,5 +7,11 @@
 include_once 'video_player_node_with_embedded_playlist.features.inc';
 
 function video_player_node_with_embedded_playlist_theme_registry_alter(&$theme_registry) {
-  dpm($theme_registry);
+     // tell the theme system to look in the "templates" subdirectory within our module directory
+  $theme_registry['field_collection_item']['theme paths'] = array(0 => drupal_get_path('module', 'video_player_node_with_embedded_playlist') . '/templates');
+  $theme_registry['field_collection_item']['theme path'] = drupal_get_path('module', 'video_player_node_with_embedded_playlist') . '/templates';
+  $theme_registry['field_collection_item']['path'] = drupal_get_path('module', 'video_player_node_with_embedded_playlist') . '/templates';
+  // tell the theme system to use 'search-results.tpl.php' as the template file. Note that you do not include 'tpl.php'
+  $theme_registry['field_collection_item']['template'] = 'field-collection-item--field-play-location'; 
+  //dpm($theme_registry);
 }

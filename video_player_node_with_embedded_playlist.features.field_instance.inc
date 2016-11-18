@@ -60,7 +60,11 @@ function video_player_node_with_embedded_playlist_field_default_field_instances(
   // 'field_collection_item-field_play_location-field_label'.
   $field_instances['field_collection_item-field_play_location-field_label'] = array(
     'bundle' => 'field_play_location',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'My 1st Bookmark',
+      ),
+    ),
     'deleted' => 0,
     'description' => 'Title of the bookmark',
     'display' => array(
