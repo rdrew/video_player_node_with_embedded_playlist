@@ -55,8 +55,8 @@ $link = l(
 ?>
 
 <div class="video_bookmark <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-	<?php print $link ?>
 	<span class="video_bookmark--time"> <?php print render($time_raw); ?> </span>
+  <?php print $link ?>
 </div>
 
 
