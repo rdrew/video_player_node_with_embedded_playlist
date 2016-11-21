@@ -52,11 +52,10 @@ $link = l(
 		),
 	)
 );
+$build['#attached']['library'][] = array('system', 'drupal.ajax');
 ?>
 
 <div class="video_bookmark <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 	<span class="video_bookmark--time"> <?php print render($time_raw); ?> </span>
   <?php print $link ?>
 </div>
-
-

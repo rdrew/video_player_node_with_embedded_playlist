@@ -1,0 +1,9 @@
+@media screen and (min-width: 1280px) {
+  .node-type-video-chapters .node__content {
+    justify-content: space-between;
+    display: flex;
+  }
+  .node-type-video-chapters .field--name-field-video-link {
+    width: 70%;
+  }
+}
